@@ -43,7 +43,7 @@ export default function SmallNavbar() {
             ))}
           </ul>
 
-          <SocialsIcons iconWidth="7" mainClasses="mt-auto gap-8" />
+          <SocialsIcons iconWidth="larg" mainClasses="mt-auto gap-8" />
         </div>
       </div>
     </div>

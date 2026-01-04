@@ -12,8 +12,8 @@ export default function SearchButton({ setOpen, open }: Props) {
     <button
       disabled={open}
       onClick={() => setOpen((prev) => !prev)}
-      className="border-r cursor-pointer border-border-color flex h-full w-10 items-center justify-center bg-green-500 text-border-color rounded-bl-sm">
-      <Search className="w-5 h-5" />
+      className="border-r cursor-pointer border-border-color flex h-full w-10 items-center justify-center bg-green-600 text-border-color rounded-bl-sm">
+      <Search className="w-4 h-4 text-black" />
     </button>
   );
 }

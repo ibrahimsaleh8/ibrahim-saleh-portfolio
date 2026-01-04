@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <Link
       href={"/"}
-      className="border-r relative group duration-500 font-bold border-border-color flex h-full w-10 items-center justify-center text-lg">
+      className="border-r relative group duration-500 font-bold border-border-color flex h-full w-10 items-center justify-center text-xl">
       <span className="group-hover:text-main-color duration-500 absolute left-2">
         {"{"}
       </span>

@@ -1,11 +1,11 @@
 import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 type Props = {
-  iconWidth: string;
+  iconWidth: "small" | "larg";
   mainClasses?: string;
 };
 export default function SocialsIcons({ iconWidth, mainClasses }: Props) {
-  const iconsWidth = `w-${iconWidth} h-${iconWidth}`;
+  const iconsWidth = `${iconWidth == "small" ? "w-4 h-4" : "w-8 h-8"}`;
   return (
     <div
       className={`flex items-center justify-center flex-wrap ${

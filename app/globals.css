@@ -156,3 +156,17 @@
   background-color: var(--color-main-color);
   color: black;
 }
+
+body {
+  background: radial-gradient(
+      600px 600px at 15% 75%,
+      rgba(32, 64, 32, 0.35),
+      transparent 70%
+    ),
+    radial-gradient(
+      600px 600px at 85% 25%,
+      rgba(46, 113, 46, 0.35),
+      transparent 70%
+    ),
+    radial-gradient(125% 125% at 50% 10%, #101010 40%, #142007 100%), #0c0c0c;
+}

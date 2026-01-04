@@ -64,7 +64,7 @@ export default function SearchContent({ setOpen }: Props) {
         <X className="w-5.5 h-5.5" />
       </button>
 
-      <h1 className="text-2xl font-bold text-center">
+      <h1 className="md:text-4xl text-2xl font-bold text-center">
         Search For Any <span className="text-main-color">Section</span>
       </h1>
       <div>
