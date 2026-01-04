@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
+import SocialsIcons from "../SocialsIcons";
 
 export default function FooterLinks() {
   return (
@@ -10,6 +11,11 @@ export default function FooterLinks() {
       </div>
       <div className="h-full flex items-center gap-4 ml-auto md:ml-0 pr-1">
         {/* Socials */}
+        <SocialsIcons
+          iconWidth="5"
+          mainClasses="gap-4 opacity-80 hidden lg:flex"
+        />
+
         <Link
           href={"/contact"}
           className="px-4 py-1.5 sm:text-sm text-xs border border-border-color rounded-sm flex items-center gap-2">
