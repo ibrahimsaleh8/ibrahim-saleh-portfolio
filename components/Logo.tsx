@@ -1,0 +1,19 @@
+import Link from "next/link";
+
+export default function Logo() {
+  return (
+    <Link
+      href={"/"}
+      className="border-r relative group duration-500 font-bold border-border-color flex h-full w-10 items-center justify-center text-lg">
+      <span className="group-hover:text-main-color duration-500 absolute left-2">
+        {"{"}
+      </span>
+      <span className="absolute left-3.5 rotate-135 text-main-color duration-500 pb-px group-hover:text-white">
+        {"/"}
+      </span>
+      <span className="group-hover:text-main-color duration-500 absolute left-[1.4rem]">
+        {"}"}
+      </span>
+    </Link>
+  );
+}

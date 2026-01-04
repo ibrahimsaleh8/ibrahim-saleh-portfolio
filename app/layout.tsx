@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Saira } from "next/font/google";
 import "./globals.css";
+import MainLayout from "@/components/Layout/MainLayout";
 
-const geistSans = Geist({
+const font = Saira({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -24,10 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${font.variable} ${font.className} antialiased`}>
+        <div className="min-h-screen w-full relative">
+          {/* Dark Horizon Glow */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              background:
+                "radial-gradient(125% 125% at 50% 10%, #111111 34%, #253810 100%)",
+            }}
+          />
+          <MainLayout>{children}</MainLayout>
+        </div>
       </body>
     </html>
   );
