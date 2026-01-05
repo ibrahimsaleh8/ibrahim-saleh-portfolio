@@ -6,12 +6,14 @@ type Props = {
   description: ReactNode[];
   classes?: string;
   delay: number;
+  withNumbers: boolean;
 };
 export default function WindowCard({
   description,
   title,
   classes,
   delay,
+  withNumbers,
 }: Props) {
   return (
     <motion.div
@@ -36,7 +38,10 @@ export default function WindowCard({
       <ul className="w-full h-full p-3 flex flex-col gap-4">
         {description.map((desc, i) => (
           <li className="flex items-start gap-2" key={i}>
-            <span className="text-low-color text-sm">{i + 1}.</span>
+            {withNumbers && (
+              <span className="text-low-color text-sm">{i + 1}.</span>
+            )}
+
             {desc}
           </li>
         ))}

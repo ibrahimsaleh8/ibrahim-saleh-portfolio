@@ -10,6 +10,7 @@ export default function AboutSection() {
       <div className="flex items-start gap-4 flex-wrap justify-center">
         <ImageWidowCard />
         <WindowCard
+          withNumbers={true}
           delay={0.4}
           classes="md:w-176 w-full"
           title="About Me"
