@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Saira } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import MainLayout from "@/components/Layout/MainLayout";
 
-const font = Saira({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const font = Poppins({
+  // variable: "--font-geist-sans",
+  // subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.variable} ${font.className} antialiased`}>
+      <body className={`${font.className} antialiased`}>
         <div className="min-h-screen w-full relative">
           <MainLayout>{children}</MainLayout>
         </div>

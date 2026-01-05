@@ -116,10 +116,14 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             <div className="relative w-full h-screen overflow-hidden">
               {/* Scrollable Content */}
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 3.5 }}
-                className="w-full h-full overflow-y-auto p-4 main-content">
+                initial={{ opacity: 0, display: "none" }}
+                animate={{ opacity: 1, display: "block" }}
+                transition={{ duration: 1, delay: 4 }}
+                style={{
+                  height: "calc(100vh - 105px)",
+                  transformOrigin: "center",
+                }}
+                className="w-full h-full overflow-y-auto p-4 overflow-x-hidden main-content">
                 {children}
               </motion.div>
 

@@ -61,6 +61,7 @@
   --color-border-color: #626262;
   --color-low-color: #979797;
   --color-card-black: #0f0f0f;
+  --color-glass-main-color: #66e25c12;
 }
 
 :root {
@@ -102,6 +103,7 @@
   --main-color: var(--color-main-color);
   --low-color: var(--color-low-color);
   --card-black: var(--color-card-black);
+  --glass-main-color: var(--color-glass-main-color);
 }
 @media (min-width: 750px) {
   :root {
@@ -169,4 +171,24 @@ body {
       transparent 70%
     ),
     radial-gradient(125% 125% at 50% 10%, #101010 40%, #142007 100%), #0c0c0c;
+}
+
+.scrooling-link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transform-origin: left;
+  background-color: var(--glass-main-color);
+  transition-duration: 0.4s;
+  opacity: 0;
+}
+.scrooling-link:hover::before {
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition-duration: 0.4s;
+  opacity: 1;
 }

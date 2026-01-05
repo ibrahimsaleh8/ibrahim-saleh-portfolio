@@ -1,6 +1,5 @@
-import { ArrowRightIcon } from "lucide-react";
-import Link from "next/link";
 import SocialsIcons from "../SocialsIcons";
+import RollingLink from "../RollingLink";
 
 export default function FooterLinks() {
   return (
@@ -16,11 +15,12 @@ export default function FooterLinks() {
           mainClasses="gap-4 opacity-80 hidden lg:flex"
         />
 
-        <Link
-          href={"/contact"}
-          className="px-4 py-1.5 sm:text-sm text-xs border border-border-color rounded-sm flex items-center gap-2">
-          {"Let's"} Get in touch <ArrowRightIcon className="w-4 h-4" />
-        </Link>
+        <RollingLink
+          linkTo="/contact"
+          title="Get in touch"
+          delay={0.5}
+          classes="px-4 py-1.5 sm:text-sm text-xs"
+        />
       </div>
     </div>
   );
