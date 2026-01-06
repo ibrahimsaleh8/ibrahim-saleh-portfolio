@@ -37,7 +37,11 @@ export const RoutesLinks = [
 ];
 export default function MainLinks() {
   return (
-    <div className="w-10 border-r border-border-color md:flex hidden">
+    <motion.div
+      initial={{ display: "none" }}
+      animate={{ display: "flex" }}
+      transition={{ duration: 0.5, delay: 4 }}
+      className="w-10 md:flex hidden my-auto">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -60,6 +64,6 @@ export default function MainLinks() {
           ))}
         </TooltipProvider>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
