@@ -1,5 +1,6 @@
 import SocialsIcons from "../SocialsIcons";
 import RollingLink from "../RollingLink";
+import { motion } from "motion/react";
 
 export default function FooterLinks() {
   return (
@@ -8,7 +9,11 @@ export default function FooterLinks() {
         <p>Developed With &#10084;</p>
         <p>Based in Egypt</p>
       </div>
-      <div className="h-full flex items-center gap-4 ml-auto md:ml-0 pr-1">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4, delay: 3.4 }}
+        className="h-full flex items-center gap-4 ml-auto md:ml-0 pr-1">
         {/* Socials */}
         <SocialsIcons
           iconWidth="small"
@@ -21,7 +26,7 @@ export default function FooterLinks() {
           delay={0.5}
           classes="px-4 py-1.5 sm:text-sm text-xs"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }
