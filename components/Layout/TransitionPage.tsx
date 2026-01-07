@@ -17,7 +17,7 @@ export default function TransitionPage({
           key={pathname}
           initial={{ height: "0%" }}
           animate={{
-            height: "calc(100vh - 6rem)",
+            height: "calc(100vh - 6.1rem)",
             scaleY: "0",
             display: "none",
             opacity: "0",

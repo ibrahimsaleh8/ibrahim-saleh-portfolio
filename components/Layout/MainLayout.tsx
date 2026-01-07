@@ -49,13 +49,14 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           ease: "easeInOut",
         }}
         style={{ transformOrigin: "center" }}
-        className="w-full overflow-hidden! frame-content">
-        <header className="w-[2.4rem] h-full border-l border-t border-border-color col-span-1 main-header hidden md:flex flex-col">
+        className="w-full overflow-hidden! frame-content relative">
+        <header className="w-[2.4rem] h-full border-l border-t border-border-color col-span-1 main-header hidden md:flex flex-col z-50 backdrop-blur-3xl">
           <Logo />
           <MainLinks />
         </header>
+
         {/* top */}
-        <div className="w-full flex items-center text-center justify-between h-10 border-x border-t border-border-color col-span-2 main-top ">
+        <div className="w-full flex items-center text-center justify-between h-10 border-x border-t border-border-color col-span-2 main-top">
           <div className="flex md:hidden border-r border-border-color">
             <Logo />
           </div>
@@ -89,19 +90,29 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             </motion.div>
           </div>
         </div>
+
         {/* Contetn */}
-        <div className="w-full overflow-y-auto p-3 h-full border-x border-y border-border-color main-content relative">
-          <TransitionPage>{children}</TransitionPage>
-          {/* Search Panel */}
-          <motion.div
-            ref={searchingRef}
-            initial={false}
-            animate={{ x: open ? 0 : "-100%" }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="absolute top-0 left-0 w-full md:w-[65%] lg:w-1/2 h-full bg-[#0f0f0fdb] backdrop-blur-sm shadow-lg z-40 border-r border-border-color">
-            <SearchContent setOpen={setOpen} />
-          </motion.div>
+        <div className="w-full h-full border-x border-y border-border-color main-content relative overflow-hidden">
+          <div className="w-full overflow-y-auto p-3 h-full">
+            <TransitionPage>{children}</TransitionPage>
+            {/* Search Panel */}
+            <motion.div
+              ref={searchingRef}
+              initial={false}
+              animate={{
+                x: open ? 0 : "-100%",
+                opacity: open ? 1 : "0",
+              }}
+              transition={{
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
+              className="absolute top-0 left-0 w-full md:w-[65%] lg:w-1/2 h-[calc(100vh-6.1rem)] bg-[#0f0f0fdb] backdrop-blur-sm shadow-lg z-10 border-r border-border-color">
+              <SearchContent setOpen={setOpen} />
+            </motion.div>
+          </div>
         </div>
+
         {/* Bottom */}
         <footer className="w-full h-10 border-b border-x border-border-color main-footer flex">
           {/* Search */}
