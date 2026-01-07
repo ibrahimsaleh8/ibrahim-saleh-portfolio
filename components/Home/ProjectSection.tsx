@@ -24,28 +24,16 @@ export default function ProjectSection() {
       </div>
 
       {/* Card */}
-      <div className="flex flex-col gap-9">
+      <div className="flex flex-col md:gap-10 gap-16 w-full items-center justify-center">
         {/* ================= Gaming Store ================= */}
         <ProjectCard
           title="Gaming Store"
-          viewLink="https://gaming-ecommerce-a7eac.web.app/"
-          repoLink="https://github.com/ibrahimsaleh8/gaming-store"
-          videoLink="https://www.facebook.com/share/v/1CyZtccTCc/"
-          keywords={[
-            "React",
-            "TypeScript",
-            "Redux Toolkit",
-            "RTK Query",
-            "React Hook Form",
-            "Yup",
-            "Tailwind CSS",
-            "Shadcn UI",
-            "Framer Motion",
-            "Firebase",
-          ]}
-          description="A feature-rich e-commerce platform for purchasing video games across PC, PlayStation, and Xbox. Includes real-time order tracking, wishlist functionality, and discount codes that increased average session duration by 35%. Built with secure Firebase authentication and a comprehensive admin dashboard for managing products and orders. Optimized animations and responsive UI achieved a 25% lower bounce rate on mobile devices."
+          keywords={["React", "RTK Query", "Firebase"]}
           image={gamingStoreImage}
           imageAlt="Gaming Store"
+          projectNumber={1}
+          year={2024}
+          projectLink="gaming-store"
         />
 
         {/* ================= Megaza Store ================= */}
@@ -74,23 +62,10 @@ export default function ProjectSection() {
           image={universityManagImage}
           imageAlt="University Management System"
           title="University Management System"
-          viewLink="https://university-management-system-eta.vercel.app/"
-          repoLink="https://github.com/ibrahimsaleh8/university-management-system"
-          videoLink="https://www.linkedin.com/posts/ibrahim-saleh-dev_universitymanagement-webdevelopment-nextjs-activity-7375186042393489408-4euh"
-          keywords={[
-            "Next.js 15",
-            "TypeScript",
-            "Prisma",
-            "PostgreSQL",
-            "React Query",
-            "Redux Toolkit",
-            "Zod",
-            "Tailwind CSS",
-            "Shadcn UI",
-            "Cloudinary",
-            "Nodemailer",
-          ]}
-          description="A comprehensive academic management system designed for students, teachers, and administrators. Includes role-based dashboards, class scheduling, exam creation, and result tracking. Features a classroom management system for assigning students and sharing course materials. Built with secure authentication, protected APIs, and optimized database queries for high performance and scalability."
+          projectNumber={2}
+          year={2025}
+          keywords={["Next.js", "PostgreSQL", "Tailwind CSS"]}
+          projectLink="university-management-system"
         />
 
         {/* ================= Optimo ================= */}

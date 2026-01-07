@@ -27,14 +27,14 @@ export default function RollingOutLink({
       }`}>
       <span>{icon}</span>
 
-      <div className="relative flex flex-col text-center items-center justify-center gap-5  duration-300 overflow-hidden">
+      <p className="relative flex flex-col text-center items-center justify-center gap-5  duration-300 overflow-hidden">
         <span className="group-hover:translate-y-[-135%] duration-300 flex items-center gap-1 text-white group-hover:text-black dark:group-hover:text-white">
           {title}
         </span>
         <span className="absolute -translate-x-1/2 bottom-[-150%] flex items-center gap-1 left-1/2 group-hover:bottom-0 duration-300 justify-center w-full">
           {title}
         </span>
-      </div>
+      </p>
     </motion.a>
   );
 }
