@@ -51,14 +51,14 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         style={{ transformOrigin: "center" }}
         className="w-full overflow-hidden! frame-content relative">
         <header className="w-[2.4rem] h-full border-l border-t border-border-color col-span-1 main-header hidden md:flex flex-col z-50 backdrop-blur-3xl">
-          <Logo />
+          <Logo size="small" withBorder={true} />
           <MainLinks />
         </header>
 
         {/* top */}
         <div className="w-full flex items-center text-center justify-between h-10 border-x border-t border-border-color col-span-2 main-top">
           <div className="flex md:hidden border-r border-border-color">
-            <Logo />
+            <Logo size="small" withBorder={true} />
           </div>
           <p className="mx-auto text-center w-full">
             Ibrahim Saleh <span className="text-main-color">{"<noyan>"}</span>
@@ -93,7 +93,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
 
         {/* Contetn */}
         <div className="w-full h-full border-x border-y border-border-color main-content relative overflow-hidden">
-          <div className="w-full overflow-y-auto p-3 h-full">
+          <div className="w-full overflow-y-auto h-full">
             <TransitionPage>{children}</TransitionPage>
             {/* Search Panel */}
             <motion.div

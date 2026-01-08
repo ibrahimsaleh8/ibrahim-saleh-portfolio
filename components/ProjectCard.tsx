@@ -30,7 +30,7 @@ export default function ProjectCard({
       className="lg:w-235 w-full">
       <Link
         href={`/projects/${projectLink}`}
-        className="relative flex items-center group justify-between gap-2 lg:min-h-60 w-full py-7 md:px-10 px-4 p-5 rounded-sm bg-[#171d1666] backdrop-blur-lg border border-border-color">
+        className="relative flex items-center group justify-between gap-2 lg:min-h-60 w-full py-7 md:px-10 px-4 p-5 rounded-sm bg-project-card backdrop-blur-lg border border-border-color">
         <div className="w-full flex gap-7 flex-col lg:flex-row  justify-between items-start">
           {/* Image */}
           <div className="lg:absolute top-1/2 z-50 mx-auto lg:-translate-y-1/2 right-40 lg:mt-0 -mt-14 md:w-100 w-full hover:-rotate-3 border group-hover:scale-100 lg:scale-0 duration-700 border-border-color rounded-sm overflow-hidden">
