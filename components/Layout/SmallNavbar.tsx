@@ -21,7 +21,7 @@ export default function SmallNavbar() {
       </button>
       <div
         ref={smallNavRef}
-        className="bg-[#00000099] overflow-hidden duration-300 z-50 p-0 backdrop-blur-sm shadow-lg absolute left-2 top-12.25 w-[calc(100vw-1rem)] h-0">
+        className="bg-[#00000099] overflow-hidden duration-300 z-50 p-0 backdrop-blur-sm shadow-lg absolute left-0 top-10.25 w-[calc(100vw-1rem)] h-0">
         <div className="flex flex-col gap-3 p-5 border-x border-border-color h-full border-b">
           <button
             onClick={HandleNavbarToggleing}
