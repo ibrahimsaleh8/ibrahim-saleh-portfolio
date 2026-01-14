@@ -3,16 +3,18 @@ import ImageWidowCard from "@/components/ImageWidowCard";
 import RollingLink from "@/components/RollingLink";
 import WindowCard from "@/components/WindowCard";
 import { motion } from "motion/react";
-
-export default function AboutSection() {
+type Props = {
+  withLink: boolean;
+};
+export default function AboutSection({ withLink }: Props) {
   return (
     <>
-      <div className="flex items-start gap-4 flex-wrap justify-center">
+      <div className="flex items-start gap-2 flex-wrap justify-center w-full">
         <ImageWidowCard />
         <WindowCard
           withNumbers={true}
           delay={0.4}
-          classes="md:w-176 w-full"
+          classes="lg:w-176 w-full"
           title="About Me"
           description={[
             <span key={0}>
@@ -42,18 +44,20 @@ export default function AboutSection() {
           ]}
         />
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
-        viewport={{ once: true }}>
-        <RollingLink
-          linkTo="/about"
-          title="About me"
-          delay={0.5}
-          classes="px-6 py-3"
-        />
-      </motion.div>
+      {withLink && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}>
+          <RollingLink
+            linkTo="/about"
+            title="About me"
+            delay={0.5}
+            classes="px-6 py-3"
+          />
+        </motion.div>
+      )}
     </>
   );
 }

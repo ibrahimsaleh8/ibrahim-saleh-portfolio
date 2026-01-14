@@ -3,11 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AnimationLogo() {
   return (
-    <motion.div
-      initial={{ opacity: 1 }}
-      whileInView={{ opacity: 0 }}
-      transition={{ duration: 0.3, delay: 2.7 }}
-      className="w-full p-10 text-8xl flex items-center justify-center gap-3 overflow-hidden relative group">
+    <div className="w-full p-10 text-8xl flex items-center justify-center gap-3 overflow-hidden relative group">
       <motion.p className="">{"{"}</motion.p>
       <motion.p
         initial={{ rotate: 0 }}
@@ -21,6 +17,6 @@ export default function AnimationLogo() {
         {"/"}
       </motion.p>
       <motion.p className="-ml-4.75">{"}"}</motion.p>
-    </motion.div>
+    </div>
   );
 }

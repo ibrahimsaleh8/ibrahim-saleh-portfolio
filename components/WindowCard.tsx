@@ -21,7 +21,7 @@ export default function WindowCard({
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, delay }}
       viewport={{ once: true }}
-      className={`bg-[#0f0f0f30] backdrop-blur-sm border border-border-color ${
+      className={`bg-[#0f0f0f7d] backdrop-blur-sm border border-border-color ${
         classes ?? ""
       }`}>
       {/*Top  */}

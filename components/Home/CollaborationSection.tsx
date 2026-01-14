@@ -6,15 +6,15 @@ import { motion } from "motion/react";
 
 export default function CollaborationSection() {
   return (
-    <div className="pt-14 flex flex-col gap-16 w-full items-center">
+    <div className="py-14 flex flex-col gap-16 w-full items-center">
       <WindowCard
         withNumbers={false}
         delay={0.4}
-        classes="w-full lg:w-210"
+        classes="w-full lg:w-240"
         title="Collaboration"
         description={[
           <div
-            className="flex flex-col lg:flex-row gap-6 justify-between md:p-5 p-4 py-16"
+            className="flex flex-col lg:flex-row gap-9 justify-between md:p-5 p-4 py-16"
             key={0}>
             <div className="lg:w-35 w-30 h-30 rounded-full border border-border-color relative">
               <div className="absolute right-0 bottom-0 w-10 h-10 border border-border-color bg-card-black rounded-full flex items-center justify-center">

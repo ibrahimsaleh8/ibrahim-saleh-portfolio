@@ -9,7 +9,7 @@ export default function ImageWidowCard() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.3 }}
       viewport={{ once: true }}
-      className="bg-[#0f0f0f30] backdrop-blur-sm w-96 border border-border-color">
+      className="bg-[#0f0f0f30] backdrop-blur-sm w-96 h-full border border-border-color">
       {/*Top  */}
       <div className="border-b border-border-color px-3 py-1 flex items-center justify-between gap-3">
         <p>Portait</p>

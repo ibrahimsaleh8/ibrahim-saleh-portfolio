@@ -8,10 +8,12 @@ import ProjectSection from "@/components/Home/ProjectSection";
 export default function Home() {
   return (
     <div className="flex flex-col gap-16 w-full h-full items-center">
-      <HeroSection />
-      <AboutSection />
-      <ProjectSection />
-      <CollaborationSection />
+      <div className="flex flex-col gap-16 w-full h-full items-center px-2">
+        <HeroSection />
+        <AboutSection withLink={true} />
+        <ProjectSection />
+        <CollaborationSection />
+      </div>
       <FooterSection />
     </div>
   );

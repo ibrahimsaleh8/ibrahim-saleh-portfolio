@@ -4,8 +4,6 @@ import "./globals.css";
 import MainLayout from "@/components/Layout/MainLayout";
 
 const font = Poppins({
-  // variable: "--font-geist-sans",
-  // subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
