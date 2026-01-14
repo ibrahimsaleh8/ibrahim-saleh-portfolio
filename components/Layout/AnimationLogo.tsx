@@ -6,17 +6,24 @@ export default function AnimationLogo() {
     <div className="w-full p-10 text-8xl flex items-center justify-center gap-3 overflow-hidden relative group">
       <motion.p className="">{"{"}</motion.p>
       <motion.p
-        initial={{ rotate: 0 }}
+        initial={{ rotate: "9deg", marginLeft: "-21px", marginTop: "0" }}
         whileInView={{
-          rotate: "144deg",
+          rotate: "140deg",
           color: "var(--main-color)",
           marginTop: "-10px",
         }}
         transition={{ duration: 0.3, ease: "easeIn", delay: 0.4 }}
-        className="-ml-7 mt-0 duration-500">
+        className="-ml-6 -mt-0.5 duration-500">
         {"/"}
       </motion.p>
-      <motion.p className="-ml-4.75">{"}"}</motion.p>
+      <motion.p
+        initial={{ marginLeft: "-21px" }}
+        whileInView={{
+          marginLeft: "-15px",
+        }}
+        transition={{ duration: 0.3, ease: "easeIn", delay: 0.4 }}>
+        {"}"}
+      </motion.p>
     </div>
   );
 }

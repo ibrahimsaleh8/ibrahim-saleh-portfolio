@@ -11,7 +11,7 @@ export default function ImageWidowCard() {
       viewport={{ once: true }}
       className="bg-[#0f0f0f30] backdrop-blur-sm w-96 h-full border border-border-color">
       {/*Top  */}
-      <div className="border-b border-border-color px-3 py-1 flex items-center justify-between gap-3">
+      <div className="border-b border-border-color px-3 py-1.5 flex items-center justify-between gap-3">
         <p>Portait</p>
         <div className="flex items-center gap-2">
           <Minus className="w-4 h-4 opacity-60 " />

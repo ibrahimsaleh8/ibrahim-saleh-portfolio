@@ -3,6 +3,7 @@
 import RollingLink from "@/components/RollingLink";
 import WindowCard from "@/components/WindowCard";
 import { motion } from "motion/react";
+import { TextAnimate } from "../ui/text-animate";
 
 export default function CollaborationSection() {
   return (
@@ -23,9 +24,14 @@ export default function CollaborationSection() {
             </div>
 
             <div className="flex flex-col gap-10 w-full">
-              <p className="md:text-5xl text-3xl leading-[1.3]">
+              <TextAnimate
+                animation="blurInUp"
+                by="word"
+                duration={0.6}
+                as={"p"}
+                className="md:text-5xl text-3xl leading-[1.3]">
                 Let’s work together on your next project
-              </p>
+              </TextAnimate>
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

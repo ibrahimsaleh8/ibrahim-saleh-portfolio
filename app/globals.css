@@ -239,3 +239,22 @@ body {
   height: 100%;
   background-color: red;
 }
+
+.tech-card {
+  position: relative;
+}
+
+.tech-card::before {
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-main-color),
+    transparent
+  );
+  width: 1px;
+  height: 9rem;
+  position: absolute;
+  bottom: -146px;
+  left: 50%;
+  transform: translateX(-50%);
+}

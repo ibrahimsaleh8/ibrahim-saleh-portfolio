@@ -25,7 +25,7 @@ export default function WindowCard({
         classes ?? ""
       }`}>
       {/*Top  */}
-      <div className="border-b border-border-color px-3 py-1 flex items-center justify-between gap-3">
+      <div className="border-b border-border-color px-3 py-1.5 flex items-center justify-between gap-3">
         <p>{title}</p>
         <div className="flex items-center gap-2">
           <Minus className="w-4 h-4 opacity-60 " />
