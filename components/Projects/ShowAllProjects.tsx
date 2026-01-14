@@ -4,6 +4,7 @@ import gamingStoreImage from "@images/projects/gameingStore.webp";
 import universityManagImage from "@images/projects/University_Management_System.webp";
 import megazaStoreImage from "@images/projects/MegazaStore.webp";
 import optimoImage from "@images/projects/Optimo.webp";
+import portfolioImage from "@images/projects/Portfolio.webp";
 
 export default function ShowAllProjects() {
   return (
@@ -64,6 +65,22 @@ export default function ShowAllProjects() {
           "Sharp",
           "Tailwind",
           "Shadcn UI",
+        ]}
+      />
+      {/* ================= Optimo ================= */}
+      <ProjectCard
+        title="My Portfolio V1.0"
+        image={portfolioImage}
+        imageAlt="Portfolio Image"
+        projectLink="portfolio"
+        projectNumber={5}
+        year={2025}
+        keywords={[
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn UI",
+          "Framer Motion",
         ]}
       />
     </div>
