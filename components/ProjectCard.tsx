@@ -49,7 +49,6 @@ export default function ProjectCard({
                 animation="blurInUp"
                 by="character"
                 className="md:text-3xl text-2xl font-medium"
-                once
                 as={"p"}>
                 {title}
               </TextAnimate>

@@ -258,3 +258,39 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.all-projects {
+  position: relative;
+}
+
+.all-projects::before {
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-main-color),
+    transparent
+  );
+  width: 1px;
+  height: 9rem;
+  position: absolute;
+  bottom: -146px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+
+.all-projects::after {
+  content: "";
+  background-image: linear-gradient(
+    to top,
+    var(--color-main-color),
+    transparent
+  );
+  width: 1px;
+  height: 9rem;
+  position: absolute;
+  top: -146px;
+  left: 50%;
+  z-index: -10;
+  transform: translateX(-50%);
+}
