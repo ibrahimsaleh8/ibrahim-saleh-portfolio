@@ -51,6 +51,7 @@ export default function AboutSection({ withLink }: Props) {
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}>
           <RollingLink
+            target="_self"
             linkTo="/about"
             title="About me"
             delay={0.5}

@@ -115,6 +115,7 @@ export default function ShowProjectDetails({
           <div className="flex flex-col gap-5">
             <p className="text-sm text-low-color">Links</p>
             <RollingLink
+              target="_blank"
               classes="px-6 py-3 text-sm"
               delay={0.3}
               linkTo={overviewLink}
@@ -123,12 +124,14 @@ export default function ShowProjectDetails({
             <RollingLink
               classes="px-6 py-3 text-sm"
               delay={0.3}
+              target="_blank"
               linkTo={repoLink}
               title="Github Repo"
             />
             <RollingLink
               classes="px-6 py-3 text-sm"
               delay={0.3}
+              target="_blank"
               linkTo={videoLink}
               title="Video Show Project"
             />

@@ -1,21 +1,25 @@
 "use client";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { HTMLAttributeAnchorTarget } from "react";
 
 export default function RollingLink({
   title,
   delay,
   classes,
   linkTo,
+  target,
 }: {
   title: string;
   linkTo: string;
   classes?: string;
   delay: number;
+  target: HTMLAttributeAnchorTarget;
 }) {
   return (
-    <a
-      target="_blank"
+    <Link
+      target={target}
       href={linkTo}
       className={`w-fit group border border-border-color rounded-sm flex items-center gap-2 scrooling-link relative duration-500 overflow-hidden hover:text-main-color hover:border-main-color ${
         classes || ""
@@ -33,6 +37,6 @@ export default function RollingLink({
         </span>
       </motion.span>
       <ChevronRight className="w-4.5 h-4.5" />
-    </a>
+    </Link>
   );
 }

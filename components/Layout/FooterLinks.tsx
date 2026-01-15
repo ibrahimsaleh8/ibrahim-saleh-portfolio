@@ -21,6 +21,7 @@ export default function FooterLinks() {
         />
 
         <RollingLink
+          target="_self"
           linkTo="/contact"
           title="Get in touch"
           delay={0.5}

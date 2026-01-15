@@ -38,6 +38,7 @@ export default function CollaborationSection() {
                 transition={{ duration: 1, delay: 0.2 }}
                 viewport={{ once: true }}>
                 <RollingLink
+                  target="_self"
                   linkTo="/contact"
                   title="Contact me"
                   delay={0.5}

@@ -74,12 +74,14 @@ export default function ExperienceCard() {
 
               <div className="flex items-center justify-center gap-4 flex-wrap">
                 <RollingLink
+                  target="_blank"
                   classes="px-6 py-3 text-sm"
                   delay={0.3}
                   linkTo={"https://sign-language-project.netlify.app/"}
                   title="Live Preview"
                 />
                 <RollingLink
+                  target="_blank"
                   classes="px-6 py-3 text-sm"
                   delay={0.3}
                   linkTo={"https://github.com/ibrahimsaleh8/sign-language"}

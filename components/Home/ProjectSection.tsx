@@ -93,6 +93,7 @@ export default function ProjectSection() {
         transition={{ duration: 1, delay: 0.2 }}
         viewport={{ once: true }}>
         <RollingLink
+          target="_self"
           linkTo="/projects"
           title="All Projects"
           delay={0.5}
