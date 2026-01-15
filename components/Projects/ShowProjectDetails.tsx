@@ -31,9 +31,9 @@ export default function ShowProjectDetails({
   otherImages,
   services,
 }: Props) {
-  console.log(description);
   return (
-    <div className="flex flex-col gap-15 container mx-auto pt-40">
+    <div className="flex flex-col gap-15 container mx-auto pt-40 px-3">
+      {/* Top */}
       <div className="flex items-center justify-center flex-col">
         <p className="text-low-color">Project</p>
         <TextAnimate
@@ -54,8 +54,13 @@ export default function ShowProjectDetails({
       </div>
 
       {/* Main Image */}
+
       <div className="xl:w-300 w-full mx-auto all-projects my-30">
-        <Image src={mainImage} alt={`${name} image`} className="w-full" />
+        <Image
+          src={mainImage}
+          alt={`${name} image`}
+          className="w-full border border-border-color rounded-sm"
+        />
       </div>
 
       {/* Text */}

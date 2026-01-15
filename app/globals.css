@@ -294,3 +294,10 @@ body {
   z-index: -10;
   transform: translateX(-50%);
 }
+
+.experience-card:hover span {
+  opacity: 0;
+}
+.experience-card:hover .main-text-experience {
+  margin-left: -1.25rem;
+}

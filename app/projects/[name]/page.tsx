@@ -3,7 +3,7 @@ import ShowProjectDetails from "@/components/Projects/ShowProjectDetails";
 import { allProjects } from "@/lib/allProjectsData";
 import { notFound } from "next/navigation";
 
-export default async function page({
+export default async function ProjectDetialsPage({
   params,
 }: {
   params: Promise<{ name: string }>;
