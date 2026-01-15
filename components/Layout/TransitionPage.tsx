@@ -18,7 +18,6 @@ export default function TransitionPage({
           initial={{ height: "0%" }}
           animate={{
             height: "calc(100vh - 6.1rem)",
-            // scaleY: "0",
             y: "100%",
             display: "none",
             backgroundColor: "#0b0b0be3",

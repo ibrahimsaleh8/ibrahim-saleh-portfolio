@@ -88,6 +88,7 @@ export default function SearchContent({ setOpen }: Props) {
               {data.length > 0 ? (
                 data.map((section, i) => (
                   <SearchResultCard
+                    setOpen={setOpen}
                     i={i + 1}
                     key={section.title}
                     {...section}
@@ -111,6 +112,7 @@ export default function SearchContent({ setOpen }: Props) {
                 <SearchMainCard
                   description={section.description}
                   icon={section.icon}
+                  setOpen={setOpen}
                   key={section.title}
                   link={section.link}
                   title={section.title}

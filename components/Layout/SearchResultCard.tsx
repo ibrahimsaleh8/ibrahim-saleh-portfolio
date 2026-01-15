@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SearchCardDataType } from "./SearchMainCard";
+import { Dispatch, SetStateAction } from "react";
 
 export default function SearchResultCard({
   description,
@@ -7,10 +8,15 @@ export default function SearchResultCard({
   link,
   title,
   i,
-}: SearchCardDataType & { i: number }) {
+  setOpen,
+}: SearchCardDataType & {
+  i: number;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}) {
   return (
     <Link
       href={link}
+      onClick={() => setOpen(false)}
       className="w-full text-low-color group p-4 border hover:border-main-color duration-500 border-border-color rounded-sm bg-card-black flex flex-col gap-2">
       <div className="flex items-center gap-3">
         <p className="text-low-color">{i <= 9 ? `0${i}` : i}</p>

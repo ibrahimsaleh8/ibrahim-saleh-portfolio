@@ -1,10 +1,12 @@
 import SocialsIcons from "../SocialsIcons";
 import RollingLink from "../RollingLink";
 import { motion } from "motion/react";
+import CurrentLocation from "./CurrentLocation";
 
 export default function FooterLinks() {
   return (
     <div className="w-full h-full flex items-center justify-between">
+      <CurrentLocation />
       <div className="text-center pl-20 md:flex items-center gap-3 mx-auto text-sm opacity-80 hidden">
         <p>Developed With &#10084;</p>
         <p>Based in Egypt</p>
