@@ -1,7 +1,7 @@
 "use client";
 
 import MainLinks from "@/components/Layout/MainLinks";
-import { Minus, Square, X } from "lucide-react";
+import { Copy, Minus, Plus, Square, X } from "lucide-react";
 import { motion } from "motion/react";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import SearchButton from "./SearchButton";
@@ -13,7 +13,18 @@ import TransitionPage from "./TransitionPage";
 
 export default function MainLayout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
+  const [minimize, setMinimize] = useState(false);
+  const [maxmize, setMaxmize] = useState(false);
   const searchingRef = useRef<HTMLDivElement>(null);
+  const mainLayoutRef = useRef<HTMLDivElement>(null);
+  const toggleFullscreen = async () => {
+    if (!document.fullscreenElement) {
+      await document.documentElement.requestFullscreen();
+    } else {
+      await document.exitFullscreen();
+    }
+    setMaxmize(!maxmize);
+  };
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (
@@ -30,6 +41,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <div className="w-full h-screen p-2 relative z-50 overflow-hidden">
       <motion.div
+        ref={mainLayoutRef}
         initial={{
           width: "var(--top-width)",
           marginLeft: "auto",
@@ -48,8 +60,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           height: { delay: 3, duration: 1 },
           ease: "easeInOut",
         }}
-        style={{ transformOrigin: "center" }}
-        className="w-full overflow-hidden! frame-content relative">
+        className="w-full overflow-hidden! frame-content relative size-full">
         <header className="w-[2.4rem] h-full border-l border-t border-border-color col-span-1 main-header hidden md:flex flex-col z-50 backdrop-blur-3xl">
           <Logo size="small" withBorder={true} />
           <MainLinks />
@@ -70,8 +81,35 @@ export default function MainLayout({ children }: { children: ReactNode }) {
               animate={{ opacity: 1, display: "flex" }}
               transition={{ duration: 1, delay: 3 }}
               className="w-full flex items-center justify-end gap-3">
-              <Minus className="w-4 h-4 opacity-60 hidden md:flex" />
-              <Square className="w-3 h-3 opacity-60 hidden md:flex" />
+              <button
+                aria-label="Toggle Minimize"
+                className="opacity-60 hidden md:flex cursor-pointer"
+                onClick={() => {
+                  setMinimize(!minimize);
+                  if (mainLayoutRef.current) {
+                    mainLayoutRef.current.classList.toggle("md:w-[90%]!");
+                    mainLayoutRef.current.classList.toggle("md:h-[90%]!");
+                    mainLayoutRef.current.classList.add("mx-0!");
+                    mainLayoutRef.current.classList.toggle("origin-top-left!");
+                    mainLayoutRef.current.classList.add("duration-500");
+                  }
+                }}>
+                {minimize ? (
+                  <Plus className="w-4 h-4" />
+                ) : (
+                  <Minus className="w-4 h-4" />
+                )}
+              </button>
+              <button
+                aria-label="Toggle Fullscreen"
+                onClick={toggleFullscreen}
+                className="opacity-60 hidden md:flex cursor-pointer">
+                {maxmize ? (
+                  <Copy className="w-3 h-3" />
+                ) : (
+                  <Square className="w-3 h-3" />
+                )}
+              </button>
               <X className="w-4 h-4 opacity-60 hidden md:flex" />
               <SmallNavbar />
             </motion.div>

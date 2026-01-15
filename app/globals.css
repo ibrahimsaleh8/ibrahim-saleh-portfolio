@@ -16,6 +16,7 @@
 }
 
 .frame-content {
+  transform-origin: center;
   display: grid;
   grid-template-columns: 2.4rem 1fr;
   grid-template-rows: auto 1fr auto;
