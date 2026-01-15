@@ -1,7 +1,6 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import CollaborationSection from "../Home/CollaborationSection";
 import RollingLink from "../RollingLink";
 import { TextAnimate } from "../ui/text-animate";
 import { motion } from "motion/react";
@@ -32,7 +31,7 @@ export default function ShowProjectDetails({
   services,
 }: Props) {
   return (
-    <div className="flex flex-col gap-15 container mx-auto pt-40 px-3">
+    <div className="flex flex-col gap-15 container mx-auto pt-40">
       {/* Top */}
       <div className="flex items-center justify-center flex-col">
         <p className="text-low-color">Project</p>
@@ -150,7 +149,6 @@ export default function ShowProjectDetails({
           />
         ))}
       </div>
-      <CollaborationSection />
     </div>
   );
 }

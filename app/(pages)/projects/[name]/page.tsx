@@ -1,4 +1,3 @@
-import FooterSection from "@/components/Home/FooterSection";
 import ShowProjectDetails from "@/components/Projects/ShowProjectDetails";
 import { allProjects } from "@/lib/allProjectsData";
 import { notFound } from "next/navigation";
@@ -13,10 +12,5 @@ export default async function ProjectDetialsPage({
   if (!projectData) {
     notFound();
   }
-  return (
-    <div className="flex flex-col gap-4">
-      <ShowProjectDetails {...projectData} />
-      <FooterSection />
-    </div>
-  );
+  return <ShowProjectDetails {...projectData} />;
 }
