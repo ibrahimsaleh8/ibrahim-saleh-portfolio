@@ -26,11 +26,9 @@ export default function CloseMessage() {
         <motion.div
           initial={false}
           animate={{ opacity: open ? 1 : 0 }}
-          className="flex z-50 overflow-hidden flex-col gap-3 fixed top-20 right-10 w-100 bg-[#0f0f0fa1] backdrop-blur-3xl border border-border-color rounded-sm">
-          {/* Timer */}
-
+          className="flex z-100000 overflow-hidden flex-col gap-3 fixed top-20 right-10 w-100 bg-[#0f0f0fa1] backdrop-blur-3xl border border-border-color rounded-sm">
           {/* Text */}
-          <div className="w-full text-left p-4 py-8 flex flex-col gap-5 relative">
+          <div className="w-full text-left p-4 py-6 flex flex-col gap-5 relative">
             <button
               onClick={() => setOpen(!open)}
               className="cursor-pointer absolute right-3.5 top-3">

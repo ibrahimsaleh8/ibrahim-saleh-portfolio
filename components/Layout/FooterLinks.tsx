@@ -5,17 +5,17 @@ import CurrentLocation from "./CurrentLocation";
 
 export default function FooterLinks() {
   return (
-    <div className="w-full h-full flex items-center justify-between">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4, delay: 3.4 }}
+      className="w-full h-full flex items-center justify-between">
       <CurrentLocation />
       <div className="text-center pl-20 md:flex items-center gap-3 mx-auto text-sm opacity-80 hidden">
         <p>Developed With &#10084;</p>
         <p>Based in Egypt</p>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.4, delay: 3.4 }}
-        className="h-full flex items-center gap-4 ml-auto md:ml-0 pr-1">
+      <div className="h-full flex items-center gap-4 ml-auto md:ml-0 pr-1">
         {/* Socials */}
         <SocialsIcons
           iconWidth="small"
@@ -29,7 +29,7 @@ export default function FooterLinks() {
           delay={0.5}
           classes="px-4 py-1.5 sm:text-sm text-xs"
         />
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 }

@@ -61,7 +61,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           height: { delay: 3, duration: 1 },
           ease: "easeInOut",
         }}
-        className="w-full overflow-hidden! frame-content relative size-full">
+        className="overflow-hidden! frame-content relative size-full">
         <header className="w-[2.4rem] h-full border-l border-t border-border-color col-span-1 main-header hidden md:flex flex-col z-50 backdrop-blur-3xl">
           <Logo size="small" withBorder={true} />
           <MainLinks />

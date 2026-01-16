@@ -10,6 +10,7 @@ export default function TransitionPage({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  console.log(pathname.split("/"));
   return (
     <AnimatePresence mode="wait">
       <div className="overflow-hidden overflow-x-hidden">
@@ -33,11 +34,18 @@ export default function TransitionPage({
             ease: "easeInOut",
           }}
           style={{ transformOrigin: "bottom" }}
-          className="absolute overflow-hidden backdrop-blur-sm left-0 md:w-[calc(100vw-3.5rem)] w-[calc(100vw-1.1rem)] h-[calc(100vh-6rem)] top-0 bg-black z-50 text-white flex flex-col items-center justify-center">
+          className="absolute overflow-hidden backdrop-blur-sm left-0 w-full h-[calc(100vh-6rem)] top-0 bg-black z-50 text-white flex flex-col items-center justify-center">
           <AnimationLogo />
-          <p className="md:text-6xl text-5xl capitalize font-medium mb-36">
-            {pathname.split("/")[1] ? pathname.split("/")[1] : "home"}
-          </p>
+          <div className="flex flex-col gap-10 items-center justify-center text-center mb-36">
+            <p className="md:text-6xl text-5xl capitalize font-medium">
+              {pathname.split("/")[1] ? pathname.split("/")[1] : "home"}
+            </p>
+            {pathname.split("/").length == 3 && (
+              <p className="md:text-4xl text-2xl font-medium capitalize text-main-color">
+                {pathname.split("/")[2].split("-").join(" ")}
+              </p>
+            )}
+          </div>
         </motion.div>
         <motion.div
           key={pathname + 2}
