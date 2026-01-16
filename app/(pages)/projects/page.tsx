@@ -1,6 +1,9 @@
 import MainHeroSection from "@/components/MainHeroSection";
 import ShowAllProjects from "@/components/Projects/ShowAllProjects";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Projects",
+};
 export default function ProjectsPage() {
   return (
     <>

@@ -1,6 +1,10 @@
 import AboutInfoSection from "@/components/About/AboutInfoSection";
 import TechnologySection from "@/components/About/TechnologySection";
 import MainHeroSection from "@/components/MainHeroSection";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function AboutPage() {
   return (

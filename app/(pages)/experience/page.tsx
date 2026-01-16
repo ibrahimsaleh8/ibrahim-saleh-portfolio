@@ -1,6 +1,9 @@
 import ExperienceCard from "@/components/Experience/ExperienceCard";
 import MainHeroSection from "@/components/MainHeroSection";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Experience",
+};
 export default function ExperiencePage() {
   return (
     <div className="flex flex-col gap-16 w-full h-full">
