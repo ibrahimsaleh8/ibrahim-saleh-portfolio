@@ -4,7 +4,7 @@ import MainHeroSection from "@/components/MainHeroSection";
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col gap-16 w-full items-center">
+    <div className="flex flex-col gap-20 w-full items-center">
       <MainHeroSection
         page="About"
         smallParagraph="I’m Ibrahim Saleh, a Frontend Developer who builds modern, scalable, and

@@ -67,7 +67,7 @@ export default function ShowAllProjects() {
           "Shadcn UI",
         ]}
       />
-      {/* ================= Optimo ================= */}
+      {/* ================= Portfolio ================= */}
       <ProjectCard
         title="My Portfolio V1.0"
         image={portfolioImage}

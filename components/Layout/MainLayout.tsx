@@ -1,7 +1,7 @@
 "use client";
 
 import MainLinks from "@/components/Layout/MainLinks";
-import { Copy, Minus, Plus, Square, X } from "lucide-react";
+import { Copy, Minus, Plus, Square } from "lucide-react";
 import { motion } from "motion/react";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import SearchButton from "./SearchButton";
@@ -10,6 +10,7 @@ import Logo from "../Logo";
 import FooterLinks from "./FooterLinks";
 import SmallNavbar from "./SmallNavbar";
 import TransitionPage from "./TransitionPage";
+import CloseMessage from "./CloseMessage";
 
 export default function MainLayout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
@@ -110,7 +111,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                   <Square className="w-3 h-3" />
                 )}
               </button>
-              <X className="w-4 h-4 opacity-60 hidden md:flex" />
+              <CloseMessage />
               <SmallNavbar />
             </motion.div>
 

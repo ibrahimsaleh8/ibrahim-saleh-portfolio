@@ -61,13 +61,13 @@ export default function ExperienceCard() {
                 and clean code.
               </p>
               <div className="flex items-center gap-3 flex-wrap">
-                <p className="p-1 px-2 text-low-color border border-border-color text-xs rounded-full bg-[#0f0f0f69] backdrop-blur-lg">
+                <p className="p-1 px-2 border border-border-color text-xs rounded-full bg-[#0f0f0f69] backdrop-blur-lg">
                   Html
                 </p>
-                <p className="p-1 px-2 text-low-color border border-border-color text-xs rounded-full bg-[#0f0f0f69] backdrop-blur-lg">
+                <p className="p-1 px-2 border border-border-color text-xs rounded-full bg-[#0f0f0f69] backdrop-blur-lg">
                   CSS
                 </p>
-                <p className="p-1 px-2 text-low-color border border-border-color text-xs rounded-full bg-[#0f0f0f69] backdrop-blur-lg">
+                <p className="p-1 px-2 border border-border-color text-xs rounded-full bg-[#0f0f0f69] backdrop-blur-lg">
                   Java Script
                 </p>
               </div>
