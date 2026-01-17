@@ -10,6 +10,7 @@ export default function SearchButton({ setOpen, open }: Props) {
   return (
     <>
       <button
+        aria-label="Search"
         disabled={open}
         onClick={() => setOpen((prev) => !prev)}
         className="border-r cursor-pointer border-border-color hidden md:flex h-full w-10 items-center justify-center bg-green-600 text-border-color">

@@ -47,7 +47,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           width: "var(--top-width)",
           marginLeft: "auto",
           marginRight: "auto",
-          y: "45vh",
+          y: "44vh",
           height: "2.56rem",
         }}
         animate={{
@@ -62,7 +62,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           ease: "easeInOut",
         }}
         className="overflow-hidden! frame-content relative size-full">
-        <header className="w-[2.4rem] h-full border-l border-t border-border-color col-span-1 main-header hidden md:flex flex-col z-50 backdrop-blur-3xl">
+        <header className="w-[2.4rem] h-full min-h-10 border-l border-t border-border-color col-span-1 main-header hidden md:flex flex-col z-50 backdrop-blur-3xl">
           <Logo size="small" withBorder={true} />
           <MainLinks />
         </header>
@@ -153,7 +153,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         </div>
 
         {/* Bottom */}
-        <footer className="w-full h-10 border-b border-x border-border-color main-footer flex">
+        <footer className="w-full h-10 border-b border-x border-border-color main-footer flex overflow-hidden">
           {/* Search */}
           <SearchButton setOpen={setOpen} open={open} />
           {/* Links */}

@@ -12,18 +12,21 @@ export default function SocialsIcons({ iconWidth, mainClasses }: Props) {
         mainClasses ?? ""
       }`}>
       <a
+        aria-label="Linkedin"
         target="_blank"
         href="https://www.linkedin.com/in/ibrahim-saleh-dev/"
         className="hover:scale-125 duration-300">
         <FaLinkedin className={iconsWidth} />
       </a>
       <a
+        aria-label="Github"
         target="_blank"
         href="https://github.com/ibrahimsaleh8"
         className="hover:scale-125 duration-300">
         <SiGithub className={iconsWidth} />
       </a>
       <a
+        aria-label="Facebook"
         target="_blank"
         href="https://www.facebook.com/ibrahim7saleh/"
         className="hover:scale-125 duration-300">
@@ -31,6 +34,7 @@ export default function SocialsIcons({ iconWidth, mainClasses }: Props) {
       </a>
       <a
         target="_blank"
+        aria-label="Whatsapp"
         href="https://wa.me/201015405904?text="
         className="hover:scale-125 duration-300">
         <FaWhatsapp className={iconsWidth} />

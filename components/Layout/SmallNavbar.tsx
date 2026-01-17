@@ -16,7 +16,10 @@ export default function SmallNavbar() {
   };
   return (
     <div className="flex md:hidden">
-      <button onClick={HandleNavbarToggleing} className="cursor-pointer">
+      <button
+        aria-label="Open Small Navbar"
+        onClick={HandleNavbarToggleing}
+        className="cursor-pointer">
         <Menu className="w-5 h-5 opacity-60" />
       </button>
       <div
@@ -24,6 +27,7 @@ export default function SmallNavbar() {
         className="bg-[#00000099] overflow-hidden duration-300 z-1000000 p-0 backdrop-blur-sm shadow-lg absolute left-0 top-10.25 w-[calc(100vw-1rem)] h-0">
         <div className="flex flex-col gap-3 p-5 border-x border-border-color h-full border-b">
           <button
+            aria-label="Close"
             onClick={HandleNavbarToggleing}
             className="ml-auto cursor-pointer">
             <X />

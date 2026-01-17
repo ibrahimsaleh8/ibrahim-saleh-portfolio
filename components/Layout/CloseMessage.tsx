@@ -19,7 +19,10 @@ export default function CloseMessage() {
 
   return (
     <>
-      <button onClick={() => setOpen(!open)} className="cursor-pointer">
+      <button
+        aria-label="Close"
+        onClick={() => setOpen(!open)}
+        className="cursor-pointer">
         <X className="w-4 h-4 opacity-60 hidden md:flex" />
       </button>
       <AnimatePresence>
@@ -30,6 +33,7 @@ export default function CloseMessage() {
           {/* Text */}
           <div className="w-full text-left p-4 py-6 flex flex-col gap-5 relative">
             <button
+              aria-label="Close"
               onClick={() => setOpen(!open)}
               className="cursor-pointer absolute right-3.5 top-3">
               <X className="w-4 h-4 opacity-60 hidden md:flex" />
