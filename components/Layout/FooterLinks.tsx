@@ -1,15 +1,10 @@
 import SocialsIcons from "../SocialsIcons";
 import RollingLink from "../RollingLink";
-import { motion } from "motion/react";
 import CurrentLocation from "./CurrentLocation";
 
 export default function FooterLinks() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.4, delay: 3.4 }}
-      className="w-full h-full flex items-center justify-between">
+    <div className="w-full h-full flex items-center justify-between">
       <CurrentLocation />
       <div className="text-center xl:pl-20 lg:pl-10 md:flex items-center gap-3 md:mx-auto lg:text-sm text-xs opacity-80 hidden">
         <p>Developed With &#10084;</p>
@@ -30,6 +25,6 @@ export default function FooterLinks() {
           classes="px-4 py-1.5 xl:text-sm text-xs"
         />
       </div>
-    </motion.div>
+    </div>
   );
 }
