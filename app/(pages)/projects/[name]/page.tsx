@@ -7,7 +7,6 @@ type Props = {
 };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { name } = await params;
-  console.log(name);
   const project = allProjects.find((p) => p.link === name);
 
   if (!project) {

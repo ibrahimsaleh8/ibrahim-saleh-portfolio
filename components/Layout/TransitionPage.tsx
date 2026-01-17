@@ -10,7 +10,6 @@ export default function TransitionPage({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  console.log(pathname.split("/"));
   return (
     <AnimatePresence mode="wait">
       <div className="overflow-hidden overflow-x-hidden">
