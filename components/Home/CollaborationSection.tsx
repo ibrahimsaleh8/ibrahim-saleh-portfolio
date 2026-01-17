@@ -4,7 +4,8 @@ import RollingLink from "@/components/RollingLink";
 import WindowCard from "@/components/WindowCard";
 import { motion } from "motion/react";
 import { TextAnimate } from "../ui/text-animate";
-
+import Image from "next/image";
+import myImage from "@images/my-image.jpg";
 export default function CollaborationSection() {
   return (
     <div className="py-14 flex flex-col gap-16 w-full items-center">
@@ -15,15 +16,20 @@ export default function CollaborationSection() {
         title="Collaboration"
         description={[
           <div
-            className="flex flex-col lg:flex-row gap-9 justify-between md:p-5 p-4 py-16"
+            className="flex flex-col md:flex-row gap-9 md:justify-between md:items-start items-center justify-center md:p-5 p-0 py-16"
             key={0}>
-            <div className="lg:w-35 w-30 h-30 rounded-full border border-border-color relative">
+            <div className="w-40 h-40 rounded-full border border-border-color relative">
+              <Image
+                src={myImage}
+                alt="my image"
+                className="w-40 h-40 rounded-full object-cover object-top"
+              />
               <div className="absolute right-0 bottom-0 w-10 h-10 border border-border-color bg-card-black rounded-full flex items-center justify-center">
                 &#128075;
               </div>
             </div>
 
-            <div className="flex flex-col gap-10 w-full">
+            <div className="flex flex-col gap-10 flex-1 text-center items-center md:text-left md:items-start">
               <TextAnimate
                 animation="blurInUp"
                 by="word"

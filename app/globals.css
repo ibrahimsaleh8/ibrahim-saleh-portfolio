@@ -27,7 +27,7 @@
     "main-footer main-footer";
   height: calc(100vh - 0.6rem);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .frame-content {
     grid-template-areas:
       "main-top main-top"
@@ -199,7 +199,8 @@
 }
 
 body {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       600px 600px at 15% 75%,
       rgba(32, 64, 32, 0.35),
       transparent 70%

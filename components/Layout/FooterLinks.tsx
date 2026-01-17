@@ -11,7 +11,7 @@ export default function FooterLinks() {
       transition={{ duration: 0.4, delay: 3.4 }}
       className="w-full h-full flex items-center justify-between">
       <CurrentLocation />
-      <div className="text-center pl-20 md:flex items-center gap-3 mx-auto text-sm opacity-80 hidden">
+      <div className="text-center pl-20 lg:flex items-center gap-3 mx-auto lg:text-sm text-xs opacity-80 hidden">
         <p>Developed With &#10084;</p>
         <p>Based in Egypt</p>
       </div>
@@ -19,7 +19,7 @@ export default function FooterLinks() {
         {/* Socials */}
         <SocialsIcons
           iconWidth="small"
-          mainClasses="gap-4 opacity-80 hidden lg:flex"
+          mainClasses="gap-4 opacity-80 hidden xl:flex"
         />
 
         <RollingLink
@@ -27,7 +27,7 @@ export default function FooterLinks() {
           linkTo="/contact"
           title="Get in touch"
           delay={0.5}
-          classes="px-4 py-1.5 sm:text-sm text-xs"
+          classes="px-4 py-1.5 lg:text-sm text-xs"
         />
       </div>
     </motion.div>

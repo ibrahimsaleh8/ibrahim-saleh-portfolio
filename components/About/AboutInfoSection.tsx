@@ -27,7 +27,7 @@ export default function AboutInfoSection() {
         <WindowCard
           withNumbers={true}
           delay={0.4}
-          classes="lg:w-176 w-full"
+          classes="lg:w-160 w-full"
           title="My Socials"
           description={[
             <a

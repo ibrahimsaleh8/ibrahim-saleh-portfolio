@@ -18,16 +18,16 @@ export default function MainHeroSection({
       <div className="flex flex-col gap-1 items-center">
         <p className="text-low-color">{page}</p>
 
-        <div className="lg:text-7xl md:text-5xl text-4xl text-center font-medium">
-          <TextAnimate animation="blurInUp" by="character">
+        <div className="lg:text-7xl md:text-5xl text-4xl text-center font-medium flex-wrap">
+          <TextAnimate animation="blurInUp" by="word">
             {Toptitle}
           </TextAnimate>
-          <div className="flex items-center gap-0.5 text-center justify-center">
+          <div className="flex items-center gap-0.5 text-center justify-center flex-wrap">
             {Secondtitle && (
               <TextAnimate
                 delay={0.3}
                 animation="blurInUp"
-                by="character"
+                by="word"
                 as={"span"}>
                 {Secondtitle}
               </TextAnimate>
@@ -37,7 +37,7 @@ export default function MainHeroSection({
               delay={0.4}
               className="text-main-color"
               animation="blurInUp"
-              by="character"
+              by="word"
               as={"span"}>
               {ShineyTxt}
             </TextAnimate>

@@ -38,7 +38,7 @@ export default function ShowProjectDetails({
         <TextAnimate
           className="lg:text-7xl md:text-5xl text-4xl text-center font-medium"
           animation="blurInUp"
-          by="character">
+          by="word">
           {name}
         </TextAnimate>
         <div className="flex items-center gap-3 flex-wrap mt-10 justify-center">

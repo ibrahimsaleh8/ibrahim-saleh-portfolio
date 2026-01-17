@@ -5,8 +5,8 @@ import TeachnologeisCard from "./TeachnologeisCard";
 export default function TechnologySection() {
   return (
     <div className="py-20 flex flex-col gap-15 items-center w-full">
-      <div className="flex items-center justify-center text-center flex-col lg:text-6xl md:text-5xl text-4xl gap-0.5">
-        <TextAnimate animation="blurIn" by="character" as={"p"}>
+      <div className="flex items-center justify-center flex-col lg:text-7xl sm:text-5xl text-2xl text-center gap-0.5">
+        <TextAnimate animation="blurIn" by="word" as={"p"}>
           Some of the techs I like to
         </TextAnimate>
         <TextAnimate

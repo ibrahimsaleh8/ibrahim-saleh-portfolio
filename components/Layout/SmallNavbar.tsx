@@ -21,7 +21,7 @@ export default function SmallNavbar() {
       </button>
       <div
         ref={smallNavRef}
-        className="bg-[#00000099] overflow-hidden duration-300 z-50 p-0 backdrop-blur-sm shadow-lg absolute left-0 top-10.25 w-[calc(100vw-1rem)] h-0">
+        className="bg-[#00000099] overflow-hidden duration-300 z-1000000 p-0 backdrop-blur-sm shadow-lg absolute left-0 top-10.25 w-[calc(100vw-1rem)] h-0">
         <div className="flex flex-col gap-3 p-5 border-x border-border-color h-full border-b">
           <button
             onClick={HandleNavbarToggleing}
@@ -30,7 +30,7 @@ export default function SmallNavbar() {
           </button>
           <ul className="w-full flex flex-col gap-6">
             {RoutesLinks.map((link, i) => (
-              <li key={link.title} className="text-3xl font-medium">
+              <li key={link.title} className="text-3xl font-medium w-fit">
                 <Link
                   onClick={HandleNavbarToggleing}
                   className="w-full flex items-center gap-3"

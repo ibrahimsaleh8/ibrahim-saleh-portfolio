@@ -47,7 +47,7 @@ export default function ProjectCard({
               <TextAnimate
                 delay={0.3}
                 animation="blurInUp"
-                by="character"
+                by="word"
                 className="md:text-3xl text-2xl font-medium"
                 as={"p"}>
                 {title}

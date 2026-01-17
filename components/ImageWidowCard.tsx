@@ -9,7 +9,7 @@ export default function ImageWidowCard() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.3 }}
       viewport={{ once: true }}
-      className="bg-[#0f0f0f30] backdrop-blur-sm w-96 h-full border border-border-color">
+      className="bg-[#0f0f0f30] backdrop-blur-sm sm:w-80 w-full h-full border border-border-color">
       {/*Top  */}
       <div className="border-b border-border-color px-3 py-1.5 flex items-center justify-between gap-3">
         <p>Portait</p>
@@ -21,12 +21,12 @@ export default function ImageWidowCard() {
       </div>
 
       {/* Bottom */}
-      <div className="w-full h-70 ">
-        {/* <Image
+      <div className="w-full md:h-70 overflow-hidden">
+        <Image
           src={myImage}
           alt="My image"
-          className="w-full object-cover object-center"
-        /> */}
+          className="w-full object-cover object-top"
+        />
       </div>
     </motion.div>
   );

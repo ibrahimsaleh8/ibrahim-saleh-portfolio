@@ -14,7 +14,7 @@ export default function CurrentLocation() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6 }}
-          className=" hidden sm:flex items-center gap-2 px-3 text-sm">
+          className=" hidden sm:flex items-center gap-2 px-3 lg:text-sm text-xs">
           <Link className="text-low-color" href={"/"}>
             <House className="w-4 h-4" />
           </Link>
