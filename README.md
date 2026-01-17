@@ -3,7 +3,7 @@
 Welcome to my portfolio repository!  
 This is the source code for my **Developer Portfolio Website**, built with **Next.js** and TypeScript to showcase my skills, projects, experience, and contact info.
 
-🌐 **Live Demo:** _(Add your live link here if hosted — e.g., GitHub Pages / Vercel / Netlify)_
+🚀 **Live Portfolio:** [View Website](https://ibrahim-saleh-portfolio.vercel.app/)
 
 ---
 
