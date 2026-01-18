@@ -26,9 +26,9 @@ export default function TransitionPage({
             opacity: 0,
           }}
           transition={{
-            duration: 0.6,
-            y: { delay: 3, duration: 0.5 },
-            backgroundColor: { delay: 1, duration: 1 },
+            duration: 0.5,
+            y: { delay: 2, duration: 0.5 },
+            backgroundColor: { delay: 0.6, duration: 0.5 },
             display: { delay: 3.5 },
             ease: "easeInOut",
           }}
@@ -50,7 +50,7 @@ export default function TransitionPage({
           key={pathname + 2}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 0.5 }}>
+          transition={{ delay: 1, duration: 0.5 }}>
           {children}
         </motion.div>
       </div>
