@@ -22,7 +22,8 @@ export default function ExperienceCard() {
           <div className="flex flex-col gap-2 duration-500 main-text-experience">
             <p className="md:text-5xl text-3xl font-medium">Wesal</p>
             <p className="text-low-color sm:text-sm text-xs capitalize">
-              converts Arabic text into sign language symbols
+              Freelance accessibility web app converting Arabic text into sign
+              language symbols
             </p>
           </div>
         </div>
@@ -50,16 +51,23 @@ export default function ExperienceCard() {
               />
             </div>
             <div className="flex flex-col gap-7">
-              <p>
-                Wesal is an accessibility-driven web application designed to
-                convert Arabic text into sign language symbols, improving
-                digital inclusion for the deaf and hard-of-hearing community. As
-                a Frontend Developer, I built a fully responsive user interface,
-                worked closely with the client to understand functional and
-                accessibility requirements, and delivered a production-ready
-                solution within one week, focusing on usability, performance,
-                and clean code.
-              </p>
+              <div className="flex flex-col gap-2">
+                <p>
+                  Wesal is a freelance accessibility-focused web application
+                  built to help bridge the communication gap for the deaf and
+                  hard-of-hearing community. The platform converts Arabic text
+                  into sign language symbols, making digital content more
+                  inclusive and easier to understand.
+                </p>
+                <p>
+                  I worked directly with the client to gather requirements,
+                  translate real-world needs into intuitive UI solutions, and
+                  deliver a fully responsive, production-ready frontend. The
+                  project was completed within a tight one-week timeline, with a
+                  strong focus on performance, accessibility best practices, and
+                  clean, maintainable code.
+                </p>
+              </div>
               <div className="flex items-center gap-3 flex-wrap">
                 <p className="p-1 px-2 border border-border-color text-xs rounded-full bg-[#0f0f0f69] backdrop-blur-lg">
                   Html

@@ -56,9 +56,9 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           height: "100%",
         }}
         transition={{
-          width: { delay: 2, duration: 1 },
-          y: { delay: 3, duration: 1 },
-          height: { delay: 3, duration: 1 },
+          width: { delay: 1.1, duration: 1 },
+          y: { delay: 2.1, duration: 1 },
+          height: { delay: 2.1, duration: 1 },
           ease: "easeInOut",
         }}
         className="overflow-hidden! frame-content relative size-full">

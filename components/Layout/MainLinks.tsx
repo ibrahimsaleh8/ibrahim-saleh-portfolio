@@ -40,12 +40,12 @@ export default function MainLinks() {
     <motion.div
       initial={{ display: "none" }}
       animate={{ display: "flex" }}
-      transition={{ duration: 0.5, delay: 3.3 }}
+      transition={{ duration: 0.3, delay: 2.5 }}
       className="w-10 md:flex hidden my-auto">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 3.3 }}
+        transition={{ duration: 0.3, delay: 2.5 }}
         className="flex flex-col gap-5 items-center justify-center h-full w-full">
         <TooltipProvider>
           {RoutesLinks.map((l) => (
