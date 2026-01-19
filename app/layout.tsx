@@ -58,6 +58,9 @@ export const metadata: Metadata = {
   creator: "Ibrahim Saleh",
   publisher: "Ibrahim Saleh",
   category: "Web Development",
+  verification: {
+    google: "SrI98gSOZNrMvxTByRc926pb0un84BxxbVxc0PAUfuM",
+  },
 };
 
 export default function RootLayout({
