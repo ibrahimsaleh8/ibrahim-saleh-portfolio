@@ -9,22 +9,11 @@ import portfolioImage from "@images/projects/Portfolio.webp";
 export default function ShowAllProjects() {
   return (
     <div className="flex flex-col md:gap-10 gap-16 w-full items-center justify-center my-26 all-projects">
-      {/* ================= Gaming Store ================= */}
-      <ProjectCard
-        title="Gaming Store"
-        keywords={["React", "RTK Query", "Firebase"]}
-        image={gamingStoreImage}
-        imageAlt="Gaming Store"
-        projectNumber={1}
-        year={2024}
-        projectLink="gaming-store"
-      />
-
       {/* ================= Megaza Store ================= */}
       <ProjectCard
         title="Megaza – Men's Fashion Store"
         imageAlt="Megaza Store"
-        projectNumber={2}
+        projectNumber={1}
         year={2025}
         projectLink="megaza-store"
         image={megazaStoreImage}
@@ -44,7 +33,7 @@ export default function ShowAllProjects() {
         image={universityManagImage}
         imageAlt="University Management System"
         title="University Management System"
-        projectNumber={3}
+        projectNumber={2}
         year={2025}
         keywords={["Next.js", "PostgreSQL", "Tailwind CSS"]}
         projectLink="university-management-system"
@@ -56,7 +45,7 @@ export default function ShowAllProjects() {
         image={optimoImage}
         imageAlt="Optimo Image"
         projectLink="optimo"
-        projectNumber={4}
+        projectNumber={3}
         year={2025}
         keywords={[
           "Next.js",
@@ -73,7 +62,7 @@ export default function ShowAllProjects() {
         image={portfolioImage}
         imageAlt="Portfolio Image"
         projectLink="portfolio"
-        projectNumber={5}
+        projectNumber={4}
         year={2025}
         keywords={[
           "Next.js",
@@ -82,6 +71,17 @@ export default function ShowAllProjects() {
           "Shadcn UI",
           "Framer Motion",
         ]}
+      />
+
+      {/* ================= Gaming Store ================= */}
+      <ProjectCard
+        title="Gaming Store"
+        keywords={["React", "RTK Query", "Firebase"]}
+        image={gamingStoreImage}
+        imageAlt="Gaming Store"
+        projectNumber={5}
+        year={2024}
+        projectLink="gaming-store"
       />
     </div>
   );

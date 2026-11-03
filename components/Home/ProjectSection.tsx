@@ -1,6 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import { TextAnimate } from "@/components/ui/text-animate";
-import gamingStoreImage from "@images/projects/gameingStore.webp";
+import optimoImage from "@images/projects/Optimo.webp";
 import universityManagImage from "@images/projects/University_Management_System.webp";
 import megazaStoreImage from "@images/projects/MegazaStore.webp";
 import RollingLink from "../RollingLink";
@@ -26,17 +26,23 @@ export default function ProjectSection() {
 
       {/* Card */}
       <div className="flex flex-col md:gap-10 gap-16 w-full items-center justify-center">
-        {/* ================= Gaming Store ================= */}
+        {/* ================= Optimo ================= */}
         <ProjectCard
-          title="Gaming Store"
-          keywords={["React", "RTK Query", "Firebase"]}
-          image={gamingStoreImage}
-          imageAlt="Gaming Store"
+          title="Optimo – Image Compression & Conversion"
+          image={optimoImage}
+          imageAlt="Optimo Image"
+          projectLink="optimo"
           projectNumber={1}
-          year={2024}
-          projectLink="gaming-store"
+          year={2025}
+          keywords={[
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "Sharp",
+            "Tailwind",
+            "Shadcn UI",
+          ]}
         />
-
         {/* ================= Megaza Store ================= */}
         <ProjectCard
           title="Megaza – Men's Fashion Store"
